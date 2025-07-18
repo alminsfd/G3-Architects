@@ -10,7 +10,10 @@
 .display-flex{
     display: flex;
 }
-
+.image_fluid{
+    width: 100%;
+    height: auto;
+}
 main{
     max-width: 1440px;
     margin:0 auto;
@@ -172,7 +175,7 @@ main{
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container,.facts-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-columns: auto;
@@ -180,10 +183,21 @@ main{
     .our-features{
         margin-left: 20px;
     }
-    img{
+    .team-img-container{
         width: 100%;
         height: auto;
     }
+
+    .facts-container{
+        row-gap: 10px;
+        margin: 30px auto;
+    }
+
+    .fact-card{
+        width: auto;
+        height: 241px;
+    }
+
 }
 
 @media screen and (min-width:577px) and (max-width: 992px){
@@ -194,5 +208,17 @@ main{
     .our-features{
         margin: 50px auto;
         height: auto;
+    }
+
+    .facts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: auto;
+    }
+
+    .fact-card{
+        width: auto;
+        height: 241px;
     }
 }
