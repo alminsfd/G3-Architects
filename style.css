@@ -109,7 +109,37 @@ main{
 .banner-image{
     width: 100%;
 }
+/* some facts related styles */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fact-description{
+    max-width: 540px;
+}
 
 
 /* team styles */
@@ -132,39 +162,47 @@ main{
     font-weight: 500;
 }
 
-/* fact-style */
 
-.facts-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 100px;
+/* features section related styles */
+
+.features{
+    gap: 140px;
 }
-.fact-card{
-    border: 1px solid #FF900E;
-    width: 241px;
-    height: 241px;
-    border-radius:8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
 }
-.fact-number{
-    font-size: 2.8rem;
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card .feature-title{
     font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.fact-name{
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 0px;
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
-.fact-description{
-    max-width: 540px;
-    margin-top: 24px;
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
 }
 .sponsor-info{
     max-width: 542px;
@@ -192,7 +230,7 @@ main{
     justify-items: center;
     max-width: 1440px;
     height: 100px;
-    margin: 130px;
+    margin-top: 130px;
 }
 .footer h3{
     font-weight: 400;
