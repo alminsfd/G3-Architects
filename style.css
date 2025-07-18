@@ -204,6 +204,7 @@ main{
 .featured-architect img{
     width: 100%;
 }
+/* sponser styles */
 .sponsor-info{
     max-width: 542px;
     height: 129px;
@@ -244,7 +245,7 @@ main{
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .team-img-container,.facts-container,.sponsor-companies{
@@ -278,10 +279,16 @@ main{
     margin:15px auto;
 }
 
+#experience-badge{
+margin-top: 10px;
+margin-left: 10px;
+padding: 20px;
+}
+
 }
 
 @media screen and (min-width:577px) and (max-width: 992px){
-    .teams{
+    .teams,.features{
         display: flex;
         flex-direction: column;
     }
@@ -290,6 +297,11 @@ main{
         height: auto;
     }
 
+    #experience-badge{
+        margin: 20px auto;
+        padding: 20px;
+        justify-items: center;
+    }
     .facts-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
